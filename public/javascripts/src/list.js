@@ -1,0 +1,75 @@
+var _ = require('lodash');
+
+var list = [{
+    "id": 1,
+    "first_name": "Kathryn",
+    "last_name": "Stone",
+    "email": "kstone0@ifeng.com",
+    "gender": "Female",
+    "ip_address": "185.215.160.243"
+}, {
+    "id": 2,
+    "first_name": "Andrew",
+    "last_name": "Mitchell",
+    "email": "amitchell1@miibeian.gov.cn",
+    "gender": "Male",
+    "ip_address": "106.183.222.207"
+}, {
+    "id": 3,
+    "first_name": "Sara",
+    "last_name": "Willis",
+    "email": "swillis2@scribd.com",
+    "gender": "Female",
+    "ip_address": "219.180.59.17"
+}, {
+    "id": 4,
+    "first_name": "Stephanie",
+    "last_name": "Coleman",
+    "email": "scoleman3@va.gov",
+    "gender": "Female",
+    "ip_address": "59.193.246.94"
+}, {
+    "id": 5,
+    "first_name": "David",
+    "last_name": "Peterson",
+    "email": "dpeterson4@mashable.com",
+    "gender": "Male",
+    "ip_address": "159.10.141.66"
+}, {
+    "id": 6,
+    "first_name": "Catherine",
+    "last_name": "Carroll",
+    "email": "ccarroll5@intel.com",
+    "gender": "Female",
+    "ip_address": "159.193.233.13"
+}, {
+    "id": 7,
+    "first_name": "Marie",
+    "last_name": "Carter",
+    "email": "mcarter6@nsw.gov.au",
+    "gender": "Female",
+    "ip_address": "142.217.228.77"
+}, {
+    "id": 8,
+    "first_name": "Eugene",
+    "last_name": "Brooks",
+    "email": "ebrooks7@simplemachines.org",
+    "gender": "Male",
+    "ip_address": "116.228.205.78"
+}, {
+    "id": 9,
+    "first_name": "Ernest",
+    "last_name": "Willis",
+    "email": "ewillis8@mozilla.com",
+    "gender": "Male",
+    "ip_address": "170.179.129.169"
+}, {
+    "id": 10,
+    "first_name": "Melissa",
+    "last_name": "Sims",
+    "email": "msims9@digg.com",
+    "gender": "Female",
+    "ip_address": "70.204.170.32"
+}];
+
+console.log('scripts for list page');

@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1= title
+    p Welcome to #{title}
+    p #{description}
+    form
+        div.form-group
+            label(for="login") Instagramm login
+            input#login.form-control(name="login", placeholder="Your instagram username", type="text", value=login)
+        div.form-group
+            button.btn.btn-default(type="submit") Show me
+    if diff
+        include diff

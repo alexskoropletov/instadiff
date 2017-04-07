@@ -4,15 +4,29 @@
   "private": true,
   "scripts": {
     "start": "forever start --minUptime 1000 --spinSleepTime 1000 ./bin/www",
-    "stop":  "forever stop ./bin/www"
+    "stop": "forever stop ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
+    "bootstrap": "^3.3.7",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
+    "file-loader": "^0.11.1",
+    "instagram-node-api": "^1.5.0",
+    "jquery": "^3.2.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "lodash": "^4.17.4",
     "morgan": "~1.8.1",
+    "node-instagram": "^1.4.0",
     "pug": "~2.0.0-beta11",
-    "serve-favicon": "~2.4.2"
+    "serve-favicon": "~2.4.2",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.3.3"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.0"
   }
 }
