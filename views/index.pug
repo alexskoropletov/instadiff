@@ -1,14 +1,15 @@
 extends layout
 
 block content
-    h1= title
+    a(href="/")
+        h1= title
     p Welcome to #{title}
     p #{description}
-    form
+    form(action="/get_access")
         div.form-group
             label(for="login") Instagramm login
             input#login.form-control(name="login", placeholder="Your instagram username", type="text", value=login)
         div.form-group
             button.btn.btn-default(type="submit") Show me
-    if diff
+    if follows && followed_by
         include diff

@@ -1,8 +1,10 @@
 {
+  "url": "http://localhost:3001",
   "title": "InstaDiff",
-  "description": "This is a service that shows diffrence between of your followers and following lists",
+  "description": "This is a service that shows diffrence between your followers and following lists",
   "instagram": {
-    "clientId": "",
-    "accessToken": ""
+    "clientId": "[!] PUT YOUR CLIENT ID HERE [!]",
+    "clientSecret": "[!] PUT YOUR CLIENT ID HERE [!]",
+    "redirect_uri": "/get_token"
   }
 }
