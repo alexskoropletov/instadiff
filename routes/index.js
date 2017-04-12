@@ -5,7 +5,7 @@ var router = express.Router();
 
 router.get('/', function (req, res, next) {
     if (req.query.code && req.query.login) {
-        instadiff.get(req.query, function () {
+        instadiff.get(req.query, req.protocol + "://" + req.get('host'), function () {
             res.render(
                 'index',
                 {
@@ -40,7 +40,7 @@ router.get('/get_access', function (req, res, next) {
             + "&scope=follower_list"
             + "&redirect_uri="
             + encodeURIComponent(
-                config.url
+                req.protocol + "://" + req.get('host')
                 + config.instagram.redirect_uri
                 + "?userid=" + req.query.login
             )
@@ -61,6 +61,10 @@ router.get('/get_token', function (req, res, next) {
     } else {
         res.redirect("/");
     }
+});
+
+router.get('/privacy', function (req, res, next) {
+    res.render('privacy');
 });
 
 module.exports = router;

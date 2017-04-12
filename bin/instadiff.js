@@ -34,14 +34,14 @@ var instadiff = {
             );
         });
     },
-    getAccessToken: function(query, callback) {
+    getAccessToken: function(query, host, callback) {
         request.post({
             url: "https://api.instagram.com/oauth/access_token",
             form: {
                 client_id: config.instagram.clientId,
                 client_secret: config.instagram.clientSecret,
                 grant_type: 'authorization_code',
-                redirect_uri: config.url + config.instagram.redirect_uri + "?userid=" + query.login,
+                redirect_uri: host + config.instagram.redirect_uri + "?userid=" + query.login,
                 code: query.code
             }
         }, function(err, response, body) {
@@ -56,11 +56,12 @@ var instadiff = {
 
 /**
  * @param query
+ * @param host
  * @param callback
   */
-instadiff.get = function (query, callback) {
+instadiff.get = function (query, host, callback) {
     this.user_id = query.login;
-    this.getAccessToken(query, function() {
+    this.getAccessToken(query, host, function() {
         instadiff.getApiRequest('follows', 'follows', function() {
             instadiff.getApiRequest('followed-by', 'followed_by', function() {
                 callback(this.follows, this.followed_by);

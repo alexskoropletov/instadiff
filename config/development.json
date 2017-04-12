@@ -1,5 +1,4 @@
 {
-  "url": "http://localhost:3001",
   "title": "InstaDiff",
   "description": "This is a service that shows diffrence between your followers and following lists",
   "instagram": {

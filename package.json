@@ -1,6 +1,6 @@
 {
   "name": "instadiff",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "private": true,
   "scripts": {
     "start": "forever start --minUptime 1000 --spinSleepTime 1000 ./bin/www",
